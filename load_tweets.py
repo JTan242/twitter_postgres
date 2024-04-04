@@ -68,7 +68,7 @@ def get_id_urls(url, connection):
             url=:url
         ''')
         res = connection.execute(sql,{'url':url}).first()
-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
+
     id_urls = res[0]
     return id_urls
 
