@@ -9,7 +9,7 @@ test-data.zip
 
 echo 'load normalized'
 for file in $files; do
-    python load_tweets.py "$file"
+    python3 -u load_tweets.py --db=postgresql://postgres:pass@localhost:13462 --inputs "${file}"
 done
 
 echo 'load denormalized'
