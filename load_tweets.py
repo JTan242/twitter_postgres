@@ -72,7 +72,7 @@ def get_id_urls(url, connection):
     id_urls = res[0]
     return id_urls
 
-
+ 
 def insert_tweet(connection,tweet):
     '''
     Insert the tweet into the database.
